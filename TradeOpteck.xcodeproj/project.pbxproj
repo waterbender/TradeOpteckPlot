@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFC3816C2091F62900CE0D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3816B2091F62900CE0D7D /* AppDelegate.swift */; };
+		EFC3816E2091F62900CE0D7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3816D2091F62900CE0D7D /* ViewController.swift */; };
+		EFC381712091F62900CE0D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC3816F2091F62900CE0D7D /* Main.storyboard */; };
+		EFC381732091F62B00CE0D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC381722091F62B00CE0D7D /* Assets.xcassets */; };
+		EFC381762091F62B00CE0D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC381742091F62B00CE0D7D /* LaunchScreen.storyboard */; };
+		EFC381812091F62C00CE0D7D /* TradeOpteckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381802091F62C00CE0D7D /* TradeOpteckTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFC3817D2091F62C00CE0D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFC381602091F62900CE0D7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFC381672091F62900CE0D7D;
+			remoteInfo = TradeOpteck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFC381682091F62900CE0D7D /* TradeOpteck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeOpteck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC3816B2091F62900CE0D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFC3816D2091F62900CE0D7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFC381702091F62900CE0D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFC381722091F62B00CE0D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFC381752091F62B00CE0D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFC381772091F62B00CE0D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC3817C2091F62C00CE0D7D /* TradeOpteckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeOpteckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC381802091F62C00CE0D7D /* TradeOpteckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeOpteckTests.swift; sourceTree = "<group>"; };
+		EFC381822091F62C00CE0D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFC381652091F62900CE0D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC381792091F62C00CE0D7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFC3815F2091F62900CE0D7D = {
+			isa = PBXGroup;
+			children = (
+				EFC3816A2091F62900CE0D7D /* TradeOpteck */,
+				EFC3817F2091F62C00CE0D7D /* TradeOpteckTests */,
+				EFC381692091F62900CE0D7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFC381692091F62900CE0D7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFC381682091F62900CE0D7D /* TradeOpteck.app */,
+				EFC3817C2091F62C00CE0D7D /* TradeOpteckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFC3816A2091F62900CE0D7D /* TradeOpteck */ = {
+			isa = PBXGroup;
+			children = (
+				EFC3816B2091F62900CE0D7D /* AppDelegate.swift */,
+				EFC3816D2091F62900CE0D7D /* ViewController.swift */,
+				EFC3816F2091F62900CE0D7D /* Main.storyboard */,
+				EFC381722091F62B00CE0D7D /* Assets.xcassets */,
+				EFC381742091F62B00CE0D7D /* LaunchScreen.storyboard */,
+				EFC381772091F62B00CE0D7D /* Info.plist */,
+			);
+			path = TradeOpteck;
+			sourceTree = "<group>";
+		};
+		EFC3817F2091F62C00CE0D7D /* TradeOpteckTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFC381802091F62C00CE0D7D /* TradeOpteckTests.swift */,
+				EFC381822091F62C00CE0D7D /* Info.plist */,
+			);
+			path = TradeOpteckTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFC381672091F62900CE0D7D /* TradeOpteck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC381852091F62C00CE0D7D /* Build configuration list for PBXNativeTarget "TradeOpteck" */;
+			buildPhases = (
+				EFC381642091F62900CE0D7D /* Sources */,
+				EFC381652091F62900CE0D7D /* Frameworks */,
+				EFC381662091F62900CE0D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradeOpteck;
+			productName = TradeOpteck;
+			productReference = EFC381682091F62900CE0D7D /* TradeOpteck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFC3817B2091F62C00CE0D7D /* TradeOpteckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC381882091F62C00CE0D7D /* Build configuration list for PBXNativeTarget "TradeOpteckTests" */;
+			buildPhases = (
+				EFC381782091F62C00CE0D7D /* Sources */,
+				EFC381792091F62C00CE0D7D /* Frameworks */,
+				EFC3817A2091F62C00CE0D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFC3817E2091F62C00CE0D7D /* PBXTargetDependency */,
+			);
+			name = TradeOpteckTests;
+			productName = TradeOpteckTests;
+			productReference = EFC3817C2091F62C00CE0D7D /* TradeOpteckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFC381602091F62900CE0D7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Yevgenii Pasko";
+				TargetAttributes = {
+					EFC381672091F62900CE0D7D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					EFC3817B2091F62C00CE0D7D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = EFC381672091F62900CE0D7D;
+					};
+				};
+			};
+			buildConfigurationList = EFC381632091F62900CE0D7D /* Build configuration list for PBXProject "TradeOpteck" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFC3815F2091F62900CE0D7D;
+			productRefGroup = EFC381692091F62900CE0D7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFC381672091F62900CE0D7D /* TradeOpteck */,
+				EFC3817B2091F62C00CE0D7D /* TradeOpteckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFC381662091F62900CE0D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC381762091F62B00CE0D7D /* LaunchScreen.storyboard in Resources */,
+				EFC381732091F62B00CE0D7D /* Assets.xcassets in Resources */,
+				EFC381712091F62900CE0D7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC3817A2091F62C00CE0D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFC381642091F62900CE0D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC3816E2091F62900CE0D7D /* ViewController.swift in Sources */,
+				EFC3816C2091F62900CE0D7D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC381782091F62C00CE0D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC381812091F62C00CE0D7D /* TradeOpteckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFC3817E2091F62C00CE0D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFC381672091F62900CE0D7D /* TradeOpteck */;
+			targetProxy = EFC3817D2091F62C00CE0D7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFC3816F2091F62900CE0D7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFC381702091F62900CE0D7D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFC381742091F62B00CE0D7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFC381752091F62B00CE0D7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFC381832091F62C00CE0D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFC381842091F62C00CE0D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFC381862091F62C00CE0D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = TradeOpteck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yevgenii-test.TradeOpteck";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFC381872091F62C00CE0D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = TradeOpteck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yevgenii-test.TradeOpteck";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFC381892091F62C00CE0D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = TradeOpteckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yevgenii-test.TradeOpteckTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradeOpteck.app/TradeOpteck";
+			};
+			name = Debug;
+		};
+		EFC3818A2091F62C00CE0D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZS64M736MH;
+				INFOPLIST_FILE = TradeOpteckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yevgenii-test.TradeOpteckTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradeOpteck.app/TradeOpteck";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFC381632091F62900CE0D7D /* Build configuration list for PBXProject "TradeOpteck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC381832091F62C00CE0D7D /* Debug */,
+				EFC381842091F62C00CE0D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC381852091F62C00CE0D7D /* Build configuration list for PBXNativeTarget "TradeOpteck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC381862091F62C00CE0D7D /* Debug */,
+				EFC381872091F62C00CE0D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC381882091F62C00CE0D7D /* Build configuration list for PBXNativeTarget "TradeOpteckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC381892091F62C00CE0D7D /* Debug */,
+				EFC3818A2091F62C00CE0D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFC381602091F62900CE0D7D /* Project object */;
+}
