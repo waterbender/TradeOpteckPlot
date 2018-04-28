@@ -18,19 +18,11 @@ class PlotGraphsView: CPTGraphHostingView, CPTPlotDataSource, CPTScatterPlotData
         
         makeObservable()
         self.perform(#selector(updateLogic))
-//        let timer = Timer.scheduledTimer(timeInterval: 1.0,
-//                                                           target: self,
-//                                                           selector: #selector(updateLogic),
-//                                                           userInfo: nil,
-//                                                           repeats: true)
-//        timer.fire()
     }
     
     @objc func updateLogic() {
         createBoundsAndGraph()
         plotViewModel?.compliteViewControllerHandler!()
-        //configureAxes()
-        self.scatterGraph?.reloadData()
     }
     
     func createBoundsAndGraph() {
@@ -101,76 +93,87 @@ class PlotGraphsView: CPTGraphHostingView, CPTPlotDataSource, CPTScatterPlotData
         self.scatterGraph = newGraph
     }
     
+    func createAxis() {
+        
+        let hostedGraph = self.scatterGraph?.hostingView?.hostedGraph
+        // Axes
+        let axisSet = hostedGraph?.axisSet as! CPTXYAxisSet
+        let objectInfo = self.plotViewModel?.currentCurrencies.first as? CurrencyObject
+        
+        if let info = objectInfo {
+            
+            // Plot space
+            let plotSpace = hostedGraph?.defaultPlotSpace as! CPTXYPlotSpace
+            plotSpace.allowsUserInteraction = true
+            
+            let locy = info.minValue-info.minValue/5 as NSNumber
+            let lengthy = info.minValue/2.5 as NSNumber
+            //let lengthx = (self?.plotViewModel?.currentCurrencies.count ?? 50) as NSNumber
+            plotSpace.yRange = CPTPlotRange(location:locy, length:lengthy)
+            plotSpace.xRange = CPTPlotRange(location:0.0, length:7)
+            
+            var axisLabels = Set<CPTAxisLabel>()
+            for (idx, currency) in (self.plotViewModel?.currentCurrencies.enumerated())! {
+                
+                guard let currencyObject = currency as? CurrencyObject else {
+                    return
+                }
+                
+                let style = CPTMutableTextStyle()
+                style.color = .white();
+                style.fontSize = 15;
+                style.textAlignment = .left
+                
+                let label:CPTAxisLabel?
+                
+                if ((idx % (self.plotViewModel?.pointAxisValue)!) == 0) {
+                    label = CPTAxisLabel(text: currencyObject.dateHours, textStyle: style)
+                } else {
+                    label = CPTAxisLabel(text: "", textStyle: style)
+                }
+                
+                label?.tickLocation = NSNumber(value: idx)
+                label?.offset = 5
+                label?.alignment = .left
+                axisLabels.insert(label!)
+            }
+            //xAxis.majorTickLocations = majorTickLocations
+            axisSet.xAxis?.majorIntervalLength = (self.plotViewModel?.pointAxisValue as NSNumber?) ?? 50//self?.plotViewModel?.pointAxisValue!! as NSNumber
+            axisSet.xAxis?.axisLabels = axisLabels
+            axisSet.xAxis?.orthogonalPosition = info.minValue-info.minValue/20 as NSNumber
+            axisSet.xAxis?.labelingPolicy = .none
+            
+            
+            if let y = axisSet.yAxis
+                
+            {
+                y.majorIntervalLength   = (locy.cgFloatValue()/20) as NSNumber
+                y.orthogonalPosition    = 0
+                y.minorTicksPerInterval = UInt((info.minValue/5))
+                y.labelExclusionRanges  = [
+                ]
+                y.delegate = self
+                //y.relabel()
+            }
+        }
+    }
+    
+    
     func makeObservable() {
+        
+        let doOnce: Void = {
+            
+            DispatchQueue.main.asyncAfter(deadline: .now()+4, execute: {
+                self.createAxis()
+            })
+        }()
         plotViewModel?.compliteViewControllerHandler =  {
             
-            OperationQueue.main.addOperation({ [weak self] in
+            OperationQueue.main.addOperation {
                 
-                let hostedGraph = self?.scatterGraph?.hostingView?.hostedGraph
-                // Axes
-                let axisSet = hostedGraph?.axisSet as! CPTXYAxisSet
-                let objectInfo = self?.plotViewModel?.currentCurrencies.first as? CurrencyObject
-                
-                if let info = objectInfo {
-                    
-                    // Plot space
-                    let plotSpace = hostedGraph?.defaultPlotSpace as! CPTXYPlotSpace
-                    plotSpace.allowsUserInteraction = true
-                    
-                    let locy = info.minValue-info.minValue/5 as NSNumber
-                    let lengthy = info.minValue/2.5 as NSNumber
-                    let lengthx = (self?.plotViewModel?.currentCurrencies.count ?? 50) as NSNumber
-                    plotSpace.yRange = CPTPlotRange(location:locy, length:lengthy)
-                    plotSpace.xRange = CPTPlotRange(location:0.0, length:7)
-                    
-                    var axisLabels = Set<CPTAxisLabel>()
-                    for (idx, currency) in (self?.plotViewModel?.currentCurrencies.enumerated())! {
-                        
-                        guard let currencyObject = currency as? CurrencyObject else {
-                            return
-                        }
-                        
-                        let style = CPTMutableTextStyle()
-                        style.color = .white();
-                        style.fontSize = 15;
-                        style.textAlignment = .left
-                        
-                        let label:CPTAxisLabel?
-                        
-                        if ((idx % (self?.plotViewModel?.pointAxisValue)!) == 0) {
-                            label = CPTAxisLabel(text: currencyObject.dateHours, textStyle: style)
-                        } else {
-                            label = CPTAxisLabel(text: "", textStyle: style)
-                        }
-                        
-                        label?.tickLocation = NSNumber(value: idx)
-                        label?.offset = 5
-                        label?.alignment = .left
-                        axisLabels.insert(label!)
-                    }
-                    //xAxis.majorTickLocations = majorTickLocations
-                    axisSet.xAxis?.majorIntervalLength = (self?.plotViewModel?.pointAxisValue as NSNumber?) ?? 50//self?.plotViewModel?.pointAxisValue!! as NSNumber
-                    axisSet.xAxis?.axisLabels = axisLabels
-                    axisSet.xAxis?.orthogonalPosition = info.minValue-info.minValue/20 as NSNumber
-                    axisSet.xAxis?.labelingPolicy = .none
-                
-                    
-                    if let y = axisSet.yAxis
-                        
-                    {
-                        y.majorIntervalLength   = (locy.cgFloatValue()/20) as NSNumber
-                        y.orthogonalPosition    = 0
-                        y.minorTicksPerInterval = UInt((info.minValue/5))
-                        y.labelExclusionRanges  = [
-                        ]
-                        y.delegate = self
-                        //y.relabel()
-                    }
-                }
-                //self?.configureAxes()
-                self?.scatterGraph?.reloadData()
-                //self?.layoutSubviews()
-            })
+                doOnce
+                self.scatterGraph?.reloadData()
+            }
         }
     }
     
@@ -202,66 +205,4 @@ extension PlotGraphsView {
     }
     
     
-//    func configureAxes() {
-//
-//        // 1 - Configure styles
-//        let axisLineStyle = CPTMutableLineStyle()
-//        axisLineStyle.lineWidth = 2.0
-//        axisLineStyle.lineColor = CPTColor.black()
-//
-//        // 2 - Get the graph's axis set
-//        let axisSetGeneral = self.hostedGraph?.axisSet
-//        guard let axisSet = axisSetGeneral as? CPTXYAxisSet else {
-//            return
-//        }
-//
-//        /*// 3 - Configure the x-axis
-//        if let xAxis = axisSet.xAxis {
-//            var axisLabels = Set<CPTAxisLabel>()
-//
-//            guard let currencies = plotViewModel?.currentCurrencies else {
-//                return
-//            }
-//            for (idx, currency) in currencies.enumerated() {
-//
-//                guard let currencyObject = currency as? CurrencyObject else {
-//                    return
-//                }
-//
-//                //majorTickLocations.insert(NSNumber(value: idx))
-//
-//                if ((idx % (self.plotViewModel?.pointAxisValue)!) == 0) {
-//
-//                    let style = CPTMutableTextStyle()
-//                    style.color = .white();
-//                    style.fontSize = 15;
-//                    style.textAlignment = .left
-//
-//                    let label = CPTAxisLabel(text: currencyObject.createdAt, textStyle: style)
-//                    label.tickLocation = NSNumber(value: idx)
-//                    label.offset = 5
-//                    label.alignment = .left
-//                    axisLabels.insert(label)
-//                }
-//            }
-//            //xAxis.majorTickLocations = majorTickLocations
-//            xAxis.axisLabels = axisLabels
-//        }*/
-//
-//        // 4 - Configure the y-axis
-//        if let yAxis = axisSet.yAxis {
-//            yAxis.labelingPolicy = .fixedInterval
-//            yAxis.labelOffset = -10.0
-//            yAxis.minorTicksPerInterval = 3
-//            yAxis.majorTickLength = 30
-//            let majorTickLineStyle = CPTMutableLineStyle()
-//            majorTickLineStyle.lineColor = CPTColor.black().withAlphaComponent(0.1)
-//            yAxis.majorTickLineStyle = majorTickLineStyle
-//            yAxis.minorTickLength = 20
-//            let minorTickLineStyle = CPTMutableLineStyle()
-//            minorTickLineStyle.lineColor = CPTColor.black().withAlphaComponent(0.05)
-//            yAxis.minorTickLineStyle = minorTickLineStyle
-//            yAxis.axisLineStyle = axisLineStyle
-//        }
-//    }
 }
