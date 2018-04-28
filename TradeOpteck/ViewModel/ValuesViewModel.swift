@@ -6,8 +6,23 @@
 //  Copyright © 2018 Yevgenii Pasko. All rights reserved.
 //
 
-import UIKit
+class ValuesViewModel {
 
-class ValuesViewModel: NSObject {
-
+    private(set) var currentCurrencies:[Any]=[]
+    var compliteViewControllerHandler: (()->())?
+    
+    func loadData()  {
+        let synchronizer = OpteckSynchronizer()
+        synchronizer.getValues(complitionBlock: {[weak self] (array) in
+            self?.currentCurrencies.removeAll()
+            self?.currentCurrencies.append(contentsOf: array)
+            if let compliteHandler = self?.compliteViewControllerHandler {
+                compliteHandler()
+            }
+        })
+    }
+    
+    init() {
+        self.loadData()
+    }
 }

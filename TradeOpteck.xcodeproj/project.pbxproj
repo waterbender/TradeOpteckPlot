@@ -7,12 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1DC6E427CA70A2C04D25030 /* Pods_TradeOpteckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8B7345AB97BEC82ED914BB /* Pods_TradeOpteckTests.framework */; };
+		EF0287F1FB0893E2409CDE53 /* Pods_TradeOpteck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F37F1B0948D46F877A74E7 /* Pods_TradeOpteck.framework */; };
+		EF0F9811209475B20029F8B1 /* CurrencyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F9810209475B20029F8B1 /* CurrencyObject.swift */; };
+		EF0F9812209475B20029F8B1 /* CurrencyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F9810209475B20029F8B1 /* CurrencyObject.swift */; };
+		EF5EE2112093862F00C2D208 /* PlotGraphsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5EE2102093862F00C2D208 /* PlotGraphsView.swift */; };
+		EF5EE2122093862F00C2D208 /* PlotGraphsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5EE2102093862F00C2D208 /* PlotGraphsView.swift */; };
 		EFC3816C2091F62900CE0D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3816B2091F62900CE0D7D /* AppDelegate.swift */; };
-		EFC3816E2091F62900CE0D7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3816D2091F62900CE0D7D /* ViewController.swift */; };
+		EFC3816E2091F62900CE0D7D /* ValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3816D2091F62900CE0D7D /* ValuesViewController.swift */; };
 		EFC381712091F62900CE0D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC3816F2091F62900CE0D7D /* Main.storyboard */; };
 		EFC381732091F62B00CE0D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC381722091F62B00CE0D7D /* Assets.xcassets */; };
 		EFC381762091F62B00CE0D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC381742091F62B00CE0D7D /* LaunchScreen.storyboard */; };
 		EFC381812091F62C00CE0D7D /* TradeOpteckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381802091F62C00CE0D7D /* TradeOpteckTests.swift */; };
+		EFC3818F209213ED00CE0D7D /* ValueTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3818E209213ED00CE0D7D /* ValueTableCell.swift */; };
+		EFC38190209213ED00CE0D7D /* ValueTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3818E209213ED00CE0D7D /* ValueTableCell.swift */; };
+		EFC381922092155900CE0D7D /* ValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3816D2091F62900CE0D7D /* ValuesViewController.swift */; };
+		EFC38194209216AD00CE0D7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC38193209216AD00CE0D7D /* Constants.swift */; };
+		EFC38195209216AD00CE0D7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC38193209216AD00CE0D7D /* Constants.swift */; };
+		EFC38197209217DA00CE0D7D /* SubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC38196209217DA00CE0D7D /* SubParser.swift */; };
+		EFC38198209217DA00CE0D7D /* SubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC38196209217DA00CE0D7D /* SubParser.swift */; };
+		EFC3819A2092192100CE0D7D /* WebAndFilesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381992092192100CE0D7D /* WebAndFilesClient.swift */; };
+		EFC3819B2092192100CE0D7D /* WebAndFilesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381992092192100CE0D7D /* WebAndFilesClient.swift */; };
+		EFC3819D2092199B00CE0D7D /* OpteckSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3819C2092199B00CE0D7D /* OpteckSynchronizer.swift */; };
+		EFC3819E2092199B00CE0D7D /* OpteckSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3819C2092199B00CE0D7D /* OpteckSynchronizer.swift */; };
+		EFC381A020921BF500CE0D7D /* ValuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3819F20921BF500CE0D7D /* ValuesViewModel.swift */; };
+		EFC381A120921BF500CE0D7D /* ValuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3819F20921BF500CE0D7D /* ValuesViewModel.swift */; };
+		EFC381A32092B80500CE0D7D /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381A22092B80500CE0D7D /* PlotViewController.swift */; };
+		EFC381AB20931BE600CE0D7D /* PlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381AA20931BE600CE0D7D /* PlotViewModel.swift */; };
+		EFC381AC20931BE600CE0D7D /* PlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381AA20931BE600CE0D7D /* PlotViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041E6BE84C38085F026FA043 /* Pods-TradeOpteck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeOpteck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TradeOpteck/Pods-TradeOpteck.debug.xcconfig"; sourceTree = "<group>"; };
+		084ABB6FFFBEDD962BCAC815 /* Pods-TradeOpteckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeOpteckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TradeOpteckTests/Pods-TradeOpteckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56F37F1B0948D46F877A74E7 /* Pods_TradeOpteck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradeOpteck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		678FB0A1DC9DF28CB3F048B1 /* Pods-TradeOpteckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeOpteckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TradeOpteckTests/Pods-TradeOpteckTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D8B7345AB97BEC82ED914BB /* Pods_TradeOpteckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradeOpteckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0F9810209475B20029F8B1 /* CurrencyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyObject.swift; sourceTree = "<group>"; };
+		EF5EE2102093862F00C2D208 /* PlotGraphsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotGraphsView.swift; sourceTree = "<group>"; };
 		EFC381682091F62900CE0D7D /* TradeOpteck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeOpteck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC3816B2091F62900CE0D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFC3816D2091F62900CE0D7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFC3816D2091F62900CE0D7D /* ValuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuesViewController.swift; sourceTree = "<group>"; };
 		EFC381702091F62900CE0D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFC381722091F62B00CE0D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFC381752091F62B00CE0D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +65,15 @@
 		EFC3817C2091F62C00CE0D7D /* TradeOpteckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeOpteckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC381802091F62C00CE0D7D /* TradeOpteckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeOpteckTests.swift; sourceTree = "<group>"; };
 		EFC381822091F62C00CE0D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC3818E209213ED00CE0D7D /* ValueTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTableCell.swift; sourceTree = "<group>"; };
+		EFC38193209216AD00CE0D7D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EFC38196209217DA00CE0D7D /* SubParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubParser.swift; sourceTree = "<group>"; };
+		EFC381992092192100CE0D7D /* WebAndFilesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAndFilesClient.swift; sourceTree = "<group>"; };
+		EFC3819C2092199B00CE0D7D /* OpteckSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpteckSynchronizer.swift; sourceTree = "<group>"; };
+		EFC3819F20921BF500CE0D7D /* ValuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuesViewModel.swift; sourceTree = "<group>"; };
+		EFC381A22092B80500CE0D7D /* PlotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
+		EFC381AA20931BE600CE0D7D /* PlotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotViewModel.swift; sourceTree = "<group>"; };
+		FB953E66189147155A1DEA8B /* Pods-TradeOpteck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeOpteck.release.xcconfig"; path = "Pods/Target Support Files/Pods-TradeOpteck/Pods-TradeOpteck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0287F1FB0893E2409CDE53 /* Pods_TradeOpteck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +89,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DC6E427CA70A2C04D25030 /* Pods_TradeOpteckTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1C2E9382AE037FF2131D06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56F37F1B0948D46F877A74E7 /* Pods_TradeOpteck.framework */,
+				8D8B7345AB97BEC82ED914BB /* Pods_TradeOpteckTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1C5365C864825DAFDC3FF57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				041E6BE84C38085F026FA043 /* Pods-TradeOpteck.debug.xcconfig */,
+				FB953E66189147155A1DEA8B /* Pods-TradeOpteck.release.xcconfig */,
+				084ABB6FFFBEDD962BCAC815 /* Pods-TradeOpteckTests.debug.xcconfig */,
+				678FB0A1DC9DF28CB3F048B1 /* Pods-TradeOpteckTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EFC3815F2091F62900CE0D7D = {
 			isa = PBXGroup;
 			children = (
 				EFC3816A2091F62900CE0D7D /* TradeOpteck */,
 				EFC3817F2091F62C00CE0D7D /* TradeOpteckTests */,
 				EFC381692091F62900CE0D7D /* Products */,
+				A1C5365C864825DAFDC3FF57 /* Pods */,
+				8C1C2E9382AE037FF2131D06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +139,10 @@
 		EFC3816A2091F62900CE0D7D /* TradeOpteck */ = {
 			isa = PBXGroup;
 			children = (
-				EFC3816B2091F62900CE0D7D /* AppDelegate.swift */,
-				EFC3816D2091F62900CE0D7D /* ViewController.swift */,
+				EFC381912092154000CE0D7D /* Helpers */,
+				EFC3818B2091F63C00CE0D7D /* Model */,
+				EFC3818D2091F64C00CE0D7D /* ViewModel */,
+				EFC3818C2091F64700CE0D7D /* View */,
 				EFC3816F2091F62900CE0D7D /* Main.storyboard */,
 				EFC381722091F62B00CE0D7D /* Assets.xcassets */,
 				EFC381742091F62B00CE0D7D /* LaunchScreen.storyboard */,
@@ -96,6 +160,46 @@
 			path = TradeOpteckTests;
 			sourceTree = "<group>";
 		};
+		EFC3818B2091F63C00CE0D7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFC38196209217DA00CE0D7D /* SubParser.swift */,
+				EFC381992092192100CE0D7D /* WebAndFilesClient.swift */,
+				EFC3819C2092199B00CE0D7D /* OpteckSynchronizer.swift */,
+				EF0F9810209475B20029F8B1 /* CurrencyObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFC3818C2091F64700CE0D7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFC3816D2091F62900CE0D7D /* ValuesViewController.swift */,
+				EFC3818E209213ED00CE0D7D /* ValueTableCell.swift */,
+				EFC381A22092B80500CE0D7D /* PlotViewController.swift */,
+				EF5EE2102093862F00C2D208 /* PlotGraphsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFC3818D2091F64C00CE0D7D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFC3819F20921BF500CE0D7D /* ValuesViewModel.swift */,
+				EFC381AA20931BE600CE0D7D /* PlotViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EFC381912092154000CE0D7D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFC3816B2091F62900CE0D7D /* AppDelegate.swift */,
+				EFC38193209216AD00CE0D7D /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFC381852091F62C00CE0D7D /* Build configuration list for PBXNativeTarget "TradeOpteck" */;
 			buildPhases = (
+				0AC5B0E8CA5447B42EE2F262 /* [CP] Check Pods Manifest.lock */,
 				EFC381642091F62900CE0D7D /* Sources */,
 				EFC381652091F62900CE0D7D /* Frameworks */,
 				EFC381662091F62900CE0D7D /* Resources */,
+				7C923AD259B9A54EB458AA7A /* [CP] Embed Pods Frameworks */,
+				81341AB73BC3008410B80DA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFC381882091F62C00CE0D7D /* Build configuration list for PBXNativeTarget "TradeOpteckTests" */;
 			buildPhases = (
+				5D27F9184E27F0AB5F9B1FE9 /* [CP] Check Pods Manifest.lock */,
 				EFC381782091F62C00CE0D7D /* Sources */,
 				EFC381792091F62C00CE0D7D /* Frameworks */,
 				EFC3817A2091F62C00CE0D7D /* Resources */,
+				3780E39492086D6D92CE0576 /* [CP] Embed Pods Frameworks */,
+				3E217A42BE970BEB3F9ACFAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,13 +302,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AC5B0E8CA5447B42EE2F262 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TradeOpteck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3780E39492086D6D92CE0576 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TradeOpteckTests/Pods-TradeOpteckTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E217A42BE970BEB3F9ACFAC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TradeOpteckTests/Pods-TradeOpteckTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D27F9184E27F0AB5F9B1FE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TradeOpteckTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C923AD259B9A54EB458AA7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TradeOpteck/Pods-TradeOpteck-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CorePlot/CorePlot.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CorePlot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TradeOpteck/Pods-TradeOpteck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81341AB73BC3008410B80DA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TradeOpteck/Pods-TradeOpteck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFC381642091F62900CE0D7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC3816E2091F62900CE0D7D /* ViewController.swift in Sources */,
+				EFC3818F209213ED00CE0D7D /* ValueTableCell.swift in Sources */,
+				EFC381A32092B80500CE0D7D /* PlotViewController.swift in Sources */,
+				EFC3816E2091F62900CE0D7D /* ValuesViewController.swift in Sources */,
+				EFC381AB20931BE600CE0D7D /* PlotViewModel.swift in Sources */,
+				EF0F9811209475B20029F8B1 /* CurrencyObject.swift in Sources */,
 				EFC3816C2091F62900CE0D7D /* AppDelegate.swift in Sources */,
+				EFC3819A2092192100CE0D7D /* WebAndFilesClient.swift in Sources */,
+				EFC381A020921BF500CE0D7D /* ValuesViewModel.swift in Sources */,
+				EFC38194209216AD00CE0D7D /* Constants.swift in Sources */,
+				EFC3819D2092199B00CE0D7D /* OpteckSynchronizer.swift in Sources */,
+				EF5EE2112093862F00C2D208 /* PlotGraphsView.swift in Sources */,
+				EFC38197209217DA00CE0D7D /* SubParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +430,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC381922092155900CE0D7D /* ValuesViewController.swift in Sources */,
+				EFC38190209213ED00CE0D7D /* ValueTableCell.swift in Sources */,
 				EFC381812091F62C00CE0D7D /* TradeOpteckTests.swift in Sources */,
+				EFC3819B2092192100CE0D7D /* WebAndFilesClient.swift in Sources */,
+				EFC381AC20931BE600CE0D7D /* PlotViewModel.swift in Sources */,
+				EF0F9812209475B20029F8B1 /* CurrencyObject.swift in Sources */,
+				EFC381A120921BF500CE0D7D /* ValuesViewModel.swift in Sources */,
+				EF5EE2122093862F00C2D208 /* PlotGraphsView.swift in Sources */,
+				EFC38195209216AD00CE0D7D /* Constants.swift in Sources */,
+				EFC3819E2092199B00CE0D7D /* OpteckSynchronizer.swift in Sources */,
+				EFC38198209217DA00CE0D7D /* SubParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +590,7 @@
 		};
 		EFC381862091F62C00CE0D7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 041E6BE84C38085F026FA043 /* Pods-TradeOpteck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +609,7 @@
 		};
 		EFC381872091F62C00CE0D7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB953E66189147155A1DEA8B /* Pods-TradeOpteck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +628,7 @@
 		};
 		EFC381892091F62C00CE0D7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084ABB6FFFBEDD962BCAC815 /* Pods-TradeOpteckTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +650,7 @@
 		};
 		EFC3818A2091F62C00CE0D7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 678FB0A1DC9DF28CB3F048B1 /* Pods-TradeOpteckTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
