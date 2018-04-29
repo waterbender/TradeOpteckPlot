@@ -227,7 +227,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546696658.816619"
+            timestampString = "546701869.5602"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -242,24 +242,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546696658.816697"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "init()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/ValueTableCell.swift"
-            timestampString = "546541202.986174"
+            timestampString = "546701869.5602829"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -275,7 +259,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/ValueTableCell.swift"
-            timestampString = "546541202.986263"
+            timestampString = "546701869.560349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -370,22 +354,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TradeOpteck/ViewModel/PlotViewModel.swift"
-            timestampString = "546652423.957073"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "currentObject"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/OpteckSynchronizer.swift"
             timestampString = "546652423.957168"
             startingColumnNumber = "9223372036854775807"
@@ -451,7 +419,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546696658.817104"
+            timestampString = "546701869.560688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -483,7 +451,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546696658.817197"
+            timestampString = "546701869.560786"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -499,7 +467,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546696658.817256"
+            timestampString = "546701869.560848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -819,7 +787,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/PlotViewModel.swift"
-            timestampString = "546652423.959942"
+            timestampString = "546701869.561366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -835,11 +803,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/PlotViewModel.swift"
-            timestampString = "546652423.960007"
+            timestampString = "546701869.561438"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -850,13 +818,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TradeOpteck/View/PlotGraphsView.swift"
-            timestampString = "546652423.9600739"
+            filePath = "TradeOpteck/View/ValuesViewController.swift"
+            timestampString = "546701869.561612"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "updateLogic()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "refreshTable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TradeOpteck/View/ValuesViewController.swift"
+            timestampString = "546701869.561685"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -867,45 +851,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/PlotGraphsView.swift"
-            timestampString = "546652423.9604371"
+            timestampString = "546701869.5617549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "makeObservable()"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "plotGraph()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TradeOpteck.PlotGraphsView.makeObservable() -&gt; ()"
-                  moduleName = "TradeOpteck"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ZHENIA/Documents/FolderWork/TradeOpteck/TradeOpteck/View/PlotGraphsView.swift"
-                  timestampString = "546651494.465162"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "168"
-                  endingLineNumber = "168"
-                  offsetFromSymbolStart = "41">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in TradeOpteck.PlotGraphsView.makeObservable() -&gt; ()"
-                  moduleName = "TradeOpteck"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ZHENIA/Documents/FolderWork/TradeOpteck/TradeOpteck/View/PlotGraphsView.swift"
-                  timestampString = "546651494.4697829"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "170"
-                  endingLineNumber = "170"
-                  offsetFromSymbolStart = "22">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TradeOpteck/ViewModel/PlotViewModel.swift"
+            timestampString = "546701869.563488"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "deinit"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -915,12 +883,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/PlotGraphsView.swift"
-            timestampString = "546652423.960721"
+            timestampString = "546701869.563653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "makeObservable()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "plotGraph()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TradeOpteck/View/PlotGraphsView.swift"
+            timestampString = "546701869.5643491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "plotGraph()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

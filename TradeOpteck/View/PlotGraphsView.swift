@@ -13,18 +13,26 @@ class PlotGraphsView: CPTGraphHostingView, CPTPlotDataSource, CPTScatterPlotData
     
     private var scatterGraph : CPTXYGraph? = nil
     var plotViewModel: PlotViewModel?
+    var openedAxisCount = true
     
     func plotGraph() {
         
-        makeObservable()
-        self.perform(#selector(updateLogic))
+        plotViewModel?.loadData()
+        plotViewModel?.compliteViewControllerHandler =  { [weak self] in
+            
+            RunLoop.main.perform {
+                if (self?.openedAxisCount ?? true)  {
+                    self?.createBoundsAndGraph()
+                    self?.openedAxisCount=false
+                }
+                self?.createAxis()
+                self?.scatterGraph?.reloadData()
+            }
+        }
+        
     }
-    
-    @objc func updateLogic() {
-        createBoundsAndGraph()
-        plotViewModel?.compliteViewControllerHandler!()
-    }
-    
+
+
     func createBoundsAndGraph() {
         
         // Create graph from theme
@@ -91,60 +99,33 @@ class PlotGraphsView: CPTGraphHostingView, CPTPlotDataSource, CPTScatterPlotData
         
         self.scatterGraph = nil
         self.scatterGraph = newGraph
-    }
-    
-    func createAxis() {
+        
+        
         
         let hostedGraph = self.scatterGraph?.hostingView?.hostedGraph
         // Axes
-        let axisSet = hostedGraph?.axisSet as! CPTXYAxisSet
+        let axisSet = hostedGraph?.axisSet as? CPTXYAxisSet
         let objectInfo = self.plotViewModel?.currentCurrencies.first as? CurrencyObject
         
         if let info = objectInfo {
             
             // Plot space
-            let plotSpace = hostedGraph?.defaultPlotSpace as! CPTXYPlotSpace
-            plotSpace.allowsUserInteraction = true
+            let plotSpace = hostedGraph?.defaultPlotSpace as? CPTXYPlotSpace
+            plotSpace?.allowsUserInteraction = true
             
             let locy = info.minValue-info.minValue/5 as NSNumber
             let lengthy = info.minValue/2.5 as NSNumber
             //let lengthx = (self?.plotViewModel?.currentCurrencies.count ?? 50) as NSNumber
-            plotSpace.yRange = CPTPlotRange(location:locy, length:lengthy)
-            plotSpace.xRange = CPTPlotRange(location:0.0, length:7)
+            plotSpace?.yRange = CPTPlotRange(location:locy, length:lengthy)
+            plotSpace?.xRange = CPTPlotRange(location:0.0, length:7)
             
-            var axisLabels = Set<CPTAxisLabel>()
-            for (idx, currency) in (self.plotViewModel?.currentCurrencies.enumerated())! {
-                
-                guard let currencyObject = currency as? CurrencyObject else {
-                    return
-                }
-                
-                let style = CPTMutableTextStyle()
-                style.color = .white();
-                style.fontSize = 15;
-                style.textAlignment = .left
-                
-                let label:CPTAxisLabel?
-                
-                if ((idx % (self.plotViewModel?.pointAxisValue)!) == 0) {
-                    label = CPTAxisLabel(text: currencyObject.dateHours, textStyle: style)
-                } else {
-                    label = CPTAxisLabel(text: "", textStyle: style)
-                }
-                
-                label?.tickLocation = NSNumber(value: idx)
-                label?.offset = 5
-                label?.alignment = .left
-                axisLabels.insert(label!)
-            }
             //xAxis.majorTickLocations = majorTickLocations
-            axisSet.xAxis?.majorIntervalLength = (self.plotViewModel?.pointAxisValue as NSNumber?) ?? 50//self?.plotViewModel?.pointAxisValue!! as NSNumber
-            axisSet.xAxis?.axisLabels = axisLabels
-            axisSet.xAxis?.orthogonalPosition = info.minValue-info.minValue/20 as NSNumber
-            axisSet.xAxis?.labelingPolicy = .none
+            axisSet?.xAxis?.majorIntervalLength = (self.plotViewModel?.pointAxisValue as NSNumber?) ?? 50//self?.plotViewModel?.pointAxisValue!! as NSNumber
+            axisSet?.xAxis?.orthogonalPosition = info.minValue-info.minValue/20 as NSNumber
+            axisSet?.xAxis?.labelingPolicy = .none
             
             
-            if let y = axisSet.yAxis
+            if let y = axisSet?.yAxis
                 
             {
                 y.majorIntervalLength   = (locy.cgFloatValue()/20) as NSNumber
@@ -158,26 +139,41 @@ class PlotGraphsView: CPTGraphHostingView, CPTPlotDataSource, CPTScatterPlotData
         }
     }
     
-    
-    func makeObservable() {
+    func createAxis() {
         
-        let doOnce: Void = {
+        
+        let hostedGraph = self.scatterGraph?.hostingView?.hostedGraph
+        // Axes
+        let axisSet = hostedGraph?.axisSet as? CPTXYAxisSet
+        
+        var axisLabels = Set<CPTAxisLabel>()
+        for (idx, currency) in (self.plotViewModel?.currentCurrencies.enumerated())! {
             
-            DispatchQueue.main.asyncAfter(deadline: .now()+4, execute: {
-                self.createAxis()
-            })
-        }()
-        plotViewModel?.compliteViewControllerHandler =  {
-            
-            OperationQueue.main.addOperation {
-                
-                doOnce
-                self.scatterGraph?.reloadData()
+            guard let currencyObject = currency as? CurrencyObject else {
+                return
             }
+            
+            let style = CPTMutableTextStyle()
+            style.color = .white();
+            style.fontSize = 15;
+            style.textAlignment = .left
+            
+            let label:CPTAxisLabel?
+            
+            if ((idx % (self.plotViewModel?.pointAxisValue)!) == 0) {
+                label = CPTAxisLabel(text: currencyObject.dateHours, textStyle: style)
+            } else {
+                label = CPTAxisLabel(text: "", textStyle: style)
+            }
+            
+            label?.tickLocation = NSNumber(value: idx)
+            label?.offset = 5
+            label?.alignment = .left
+            axisLabels.insert(label!)
         }
+        
+        axisSet?.xAxis?.axisLabels = axisLabels
     }
-    
-    
 }
 
 extension PlotGraphsView {
@@ -203,6 +199,5 @@ extension PlotGraphsView {
             return yValue
         }
     }
-    
     
 }

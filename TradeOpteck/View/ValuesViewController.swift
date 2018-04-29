@@ -46,7 +46,7 @@ class СurrencyViewController: UIViewController {
         let idexPath = sender as! IndexPath
         let dictObject = valutesListViewModel.currentCurrencies[idexPath.row]
         let plotViewModel = PlotViewModel()
-        plotViewModel.currentObject = dictObject as? [String : String]
+        plotViewModel.currencyObject = dictObject as? [String : String]
         
         let graphsView = PlotGraphsView()
         graphsView.plotViewModel = plotViewModel
