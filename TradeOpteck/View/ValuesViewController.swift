@@ -12,13 +12,20 @@ class СurrencyViewController: UIViewController {
 
     @IBOutlet weak var valuteTableView: UITableView!
     private let valutesListViewModel = ValuesViewModel()
+    private var refreshControl: UIRefreshControl?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // enchatments of UI reloading
+        addRefreshControl()
+        self.refreshControl?.beginRefreshing()
+        
         // Do any additional setup after loading the view, typically from a nib.
         valutesListViewModel.compliteViewControllerHandler = {
             DispatchQueue.main.async {
                 self.valuteTableView.reloadData()
+                self.refreshControl?.endRefreshing()
             }
         }
     }
@@ -32,7 +39,7 @@ class СurrencyViewController: UIViewController {
         
         let vc = segue.destination
         
-        guard let resultVC: PlotViewController = vc as? PlotViewController else {
+        guard let resultVC: GraphPlotViewCoontroller = vc as? GraphPlotViewCoontroller else {
             return
         }
       
@@ -44,6 +51,17 @@ class СurrencyViewController: UIViewController {
         let graphsView = PlotGraphsView()
         graphsView.plotViewModel = plotViewModel
         resultVC.hostView = graphsView
+    }
+    
+    func addRefreshControl() {
+        // Refreshing data
+        refreshControl = UIRefreshControl()
+        valuteTableView.addSubview(refreshControl!)
+        refreshControl?.addTarget(self, action: #selector(refreshTable), for: UIControlEvents.valueChanged)
+    }
+    
+    @objc func refreshTable() {
+        valutesListViewModel.loadData()
     }
 }
 

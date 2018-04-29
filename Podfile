@@ -8,6 +8,8 @@ target 'TradeOpteck' do
   # Pods for TradeOpteck	
   pod 'SwiftSoup'
   pod 'CorePlot'
+  pod 'DGElasticPullToRefresh'
+  pod 'NVActivityIndicatorView'
 
   target 'TradeOpteckTests' do
     inherit! :search_paths

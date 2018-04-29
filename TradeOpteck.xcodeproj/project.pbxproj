@@ -32,7 +32,7 @@
 		EFC3819E2092199B00CE0D7D /* OpteckSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3819C2092199B00CE0D7D /* OpteckSynchronizer.swift */; };
 		EFC381A020921BF500CE0D7D /* ValuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3819F20921BF500CE0D7D /* ValuesViewModel.swift */; };
 		EFC381A120921BF500CE0D7D /* ValuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3819F20921BF500CE0D7D /* ValuesViewModel.swift */; };
-		EFC381A32092B80500CE0D7D /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381A22092B80500CE0D7D /* PlotViewController.swift */; };
+		EFC381A32092B80500CE0D7D /* GraphPlotViewCoontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381A22092B80500CE0D7D /* GraphPlotViewCoontroller.swift */; };
 		EFC381AB20931BE600CE0D7D /* PlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381AA20931BE600CE0D7D /* PlotViewModel.swift */; };
 		EFC381AC20931BE600CE0D7D /* PlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC381AA20931BE600CE0D7D /* PlotViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -71,7 +71,7 @@
 		EFC381992092192100CE0D7D /* WebAndFilesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAndFilesClient.swift; sourceTree = "<group>"; };
 		EFC3819C2092199B00CE0D7D /* OpteckSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpteckSynchronizer.swift; sourceTree = "<group>"; };
 		EFC3819F20921BF500CE0D7D /* ValuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuesViewModel.swift; sourceTree = "<group>"; };
-		EFC381A22092B80500CE0D7D /* PlotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
+		EFC381A22092B80500CE0D7D /* GraphPlotViewCoontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphPlotViewCoontroller.swift; sourceTree = "<group>"; };
 		EFC381AA20931BE600CE0D7D /* PlotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotViewModel.swift; sourceTree = "<group>"; };
 		FB953E66189147155A1DEA8B /* Pods-TradeOpteck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeOpteck.release.xcconfig"; path = "Pods/Target Support Files/Pods-TradeOpteck/Pods-TradeOpteck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,7 +176,7 @@
 			children = (
 				EFC3816D2091F62900CE0D7D /* ValuesViewController.swift */,
 				EFC3818E209213ED00CE0D7D /* ValueTableCell.swift */,
-				EFC381A22092B80500CE0D7D /* PlotViewController.swift */,
+				EFC381A22092B80500CE0D7D /* GraphPlotViewCoontroller.swift */,
 				EF5EE2102093862F00C2D208 /* PlotGraphsView.swift */,
 			);
 			path = View;
@@ -377,11 +377,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TradeOpteck/Pods-TradeOpteck-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CorePlot/CorePlot.framework",
+				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CorePlot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC3818F209213ED00CE0D7D /* ValueTableCell.swift in Sources */,
-				EFC381A32092B80500CE0D7D /* PlotViewController.swift in Sources */,
+				EFC381A32092B80500CE0D7D /* GraphPlotViewCoontroller.swift in Sources */,
 				EFC3816E2091F62900CE0D7D /* ValuesViewController.swift in Sources */,
 				EFC381AB20931BE600CE0D7D /* PlotViewModel.swift in Sources */,
 				EF0F9811209475B20029F8B1 /* CurrencyObject.swift in Sources */,

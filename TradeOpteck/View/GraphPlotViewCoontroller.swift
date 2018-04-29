@@ -9,7 +9,7 @@
 import UIKit
 import CorePlot
 
-class PlotViewController: UIViewController {
+class GraphPlotViewCoontroller: UIViewController {
     
     var hostView: PlotGraphsView?
     override func viewDidLoad() {

@@ -1,15 +1,23 @@
 PODS:
   - CorePlot (2.2)
+  - DGElasticPullToRefresh (1.1)
+  - NVActivityIndicatorView (4.2.0):
+    - NVActivityIndicatorView/Presenter (= 4.2.0)
+  - NVActivityIndicatorView/Presenter (4.2.0)
   - SwiftSoup (1.7.1)
 
 DEPENDENCIES:
   - CorePlot
+  - DGElasticPullToRefresh
+  - NVActivityIndicatorView
   - SwiftSoup
 
 SPEC CHECKSUMS:
   CorePlot: cbe0c6e14220705e32e06a89c7d6a5a908b7d7d8
+  DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
+  NVActivityIndicatorView: 75c9634073e03b31d7e2748cd2417feab1206195
   SwiftSoup: 277f7ef548826e0ca7603a06b30d4a5df3ee0587
 
-PODFILE CHECKSUM: ae014249b975fd76660d1867ed332342b60c3ddb
+PODFILE CHECKSUM: c162e3300cdadf83b1590384ecc273e09c6c10c1
 
 COCOAPODS: 1.4.0

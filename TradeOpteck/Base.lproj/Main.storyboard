@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--Plot View Controller-->
+        <!--Graph Plot View Coontroller-->
         <scene sceneID="M6D-Uw-7J0">
             <objects>
-                <viewController id="QHx-RT-7VO" customClass="PlotViewController" customModule="TradeOpteck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QHx-RT-7VO" customClass="GraphPlotViewCoontroller" customModule="TradeOpteck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GIM-xX-cA0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
