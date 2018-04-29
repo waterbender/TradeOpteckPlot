@@ -50,6 +50,10 @@ class PlotViewModel {
             })
         }
     }
+    
+    deinit {
+        timer?.invalidate()
+    }
 }
 
 extension Int {
