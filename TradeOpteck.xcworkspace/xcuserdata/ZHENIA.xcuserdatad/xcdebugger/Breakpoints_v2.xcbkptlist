@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.956315"
+            timestampString = "546868232.367674"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.95639"
+            timestampString = "546868232.368515"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -195,7 +195,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.956458"
+            timestampString = "546868232.369329"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
@@ -211,7 +211,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.956524"
+            timestampString = "546868232.370116"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
@@ -227,7 +227,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546701869.5602"
+            timestampString = "546701984.113366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -243,7 +243,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/ValueTableCell.swift"
-            timestampString = "546701869.5602829"
+            timestampString = "546701984.113453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -259,7 +259,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/ValueTableCell.swift"
-            timestampString = "546701869.560349"
+            timestampString = "546701984.113519"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -275,7 +275,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.956683"
+            timestampString = "546868232.371098"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
@@ -291,7 +291,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.956751"
+            timestampString = "546868232.3718899"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
@@ -307,7 +307,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.956816"
+            timestampString = "546868232.3727289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
@@ -323,7 +323,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.956881"
+            timestampString = "546868232.373485"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
@@ -339,7 +339,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.956965"
+            timestampString = "546868232.374288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -419,7 +419,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546701869.560688"
+            timestampString = "546701984.113855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -451,7 +451,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546701869.560786"
+            timestampString = "546701984.113951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -467,7 +467,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/ValuesViewModel.swift"
-            timestampString = "546701869.560848"
+            timestampString = "546701984.114012"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -611,7 +611,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/Model/SubParser.swift"
-            timestampString = "546652423.95801"
+            timestampString = "546868232.375615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -728,8 +728,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "init(from:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -744,8 +744,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "init(from:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -760,8 +760,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "init(from:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -776,8 +776,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "75"
             endingLineNumber = "75"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "init(from:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -787,7 +787,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/PlotViewModel.swift"
-            timestampString = "546701869.561366"
+            timestampString = "546701984.1145231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -803,7 +803,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/PlotViewModel.swift"
-            timestampString = "546701869.561438"
+            timestampString = "546701984.1145951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -819,7 +819,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/ValuesViewController.swift"
-            timestampString = "546701869.561612"
+            timestampString = "546701984.11473"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -835,7 +835,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/ValuesViewController.swift"
-            timestampString = "546701869.561685"
+            timestampString = "546701984.114797"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -851,13 +851,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/PlotGraphsView.swift"
-            timestampString = "546701869.5617549"
+            timestampString = "546868130.1026551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
-            landmarkName = "plotGraph()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -867,7 +867,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/ViewModel/PlotViewModel.swift"
-            timestampString = "546701869.563488"
+            timestampString = "546701984.1152869"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -883,13 +883,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/PlotGraphsView.swift"
-            timestampString = "546701869.563653"
+            timestampString = "546868130.103346"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "plotGraph()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -899,12 +899,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TradeOpteck/View/PlotGraphsView.swift"
-            timestampString = "546701869.5643491"
+            timestampString = "546868130.103572"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "plotGraph()"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TradeOpteck/Model/SubParser.swift"
+            timestampString = "546868232.376966"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "parseSectionsWithCode(codeData:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

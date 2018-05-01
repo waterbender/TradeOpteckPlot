@@ -36,7 +36,7 @@ class SubParser {
                 fullElements.append(contentsOf: active)
             }
             
-            for element in bodyElements! {
+            for element in fullElements {
                 
                 let attributesOfCurrency = element.getAttributes()
                 
